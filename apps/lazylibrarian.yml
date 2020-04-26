@@ -51,7 +51,7 @@
           - '{{path.stdout}}:{{path.stdout}}'
           - '/mnt:/mnt'
           - '/opt/appdata/{{pgrole}}:/config'
-          - '/opt/appdata/calibre/calibredb/:/config/calibredb'
+          - '/opt/appdata/calibre/calibredb/:/opt/appdata/calibre/calibredb:rw'
 
     - name: 'Setting PG ENV'
       set_fact:
